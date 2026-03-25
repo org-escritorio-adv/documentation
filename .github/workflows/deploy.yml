@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docss/**
+      - .github/workflows/deploy.yml
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: docss
+
+jobs:
+  build:
+    name: Build Docusaurus
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Use Node 20 to satisfy Docusaurus and plugin requirements
+          node-version: 20
+          cache: npm
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docss/build  # essa pasta tem o site estático do Docusaurus
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    permissions:
+      pages: write      # necessário para publicar no Pages
+      id-token: write   # necessário para OIDC
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
