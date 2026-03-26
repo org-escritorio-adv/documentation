@@ -44,7 +44,7 @@ O sistema será estruturado em:
 ## Tecnologias (a definir/ajustar)
 - Backend: Python
 - Frontend: FastAPI
-- Banco de Dados: Postgres
+- Banco de Dados: Postgre-SQL
 - Containerização: Docker
 - Testes: Selenium + testes unitários/integrados
 
