@@ -135,3 +135,100 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
     </tr>
   </tbody>
 </table>
+
+## Tema 3: Sistema Web — Área Institucional
+
+### Épico 3.1: Gestão de Conteúdo Institucional
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>ID</strong></th>
+      <th><strong>Prioridade</strong></th>
+      <th><strong>User Story</strong></th>
+      <th><strong>Critérios de Aceitação</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US 3.1.1</td>
+      <td>MUST</td>
+      <td>Como administrador, quero cadastrar e editar informações institucionais para manter o site atualizado.</td>
+      <td>- Permitir criar, editar e excluir conteúdos institucionais. <br/> - Campos: história, missão e valores. <br/> - Alterações refletidas na página pública.</td>
+    </tr>
+    <tr>
+      <td>US 3.1.2</td>
+      <td>MUST</td>
+      <td>Como administrador, quero gerenciar as áreas de atuação para atualizar os serviços oferecidos.</td>
+      <td>- Permitir criar, editar e excluir áreas. <br/> - Cada área possui título e descrição. <br/> - Listagem atualizada automaticamente no site.</td>
+    </tr>
+    <tr>
+      <td>US 3.1.3</td>
+      <td>MUST</td>
+      <td>Como administrador, quero gerenciar os perfis da equipe de advogados para manter os dados atualizados.</td>
+      <td>- Permitir criar, editar e excluir perfis. <br/> - Campos: nome, foto, descrição. <br/> - Exibição automática na página pública.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Épico 3.2: Gestão de Contatos
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>ID</strong></th>
+      <th><strong>Prioridade</strong></th>
+      <th><strong>User Story</strong></th>
+      <th><strong>Critérios de Aceitação</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US 3.2.1</td>
+      <td>MUST</td>
+      <td>Como visitante, quero enviar uma mensagem pelo formulário de contato para me comunicar com o escritório.</td>
+      <td>- Campos obrigatórios (nome, e-mail, mensagem). <br/> - Validação de dados. <br/> - Mensagem armazenada no sistema.</td>
+    </tr>
+    <tr>
+      <td>US 3.2.2</td>
+      <td>MUST</td>
+      <td>Como administrador, quero gerenciar as mensagens recebidas para responder aos contatos.</td>
+      <td>- Listar mensagens recebidas. <br/> - Visualizar detalhes. <br/> - Permitir marcar como respondida ou excluir.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Tema 4: Notificações
+
+### Épico 4.1: Gestão de Notificações
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>ID</strong></th>
+      <th><strong>Prioridade</strong></th>
+      <th><strong>User Story</strong></th>
+      <th><strong>Critérios de Aceitação</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US 4.1.1</td>
+      <td>MUST</td>
+      <td>Como sistema, quero criar notificações a partir de eventos relevantes para que os usuários possam ser informados.</td>
+      <td>- Notificações são geradas a partir de eventos previamente definidos (ex: atualização de processo). <br/> - Nem todo evento do sistema gera notificação. <br/> - Notificação deve ser associada a um usuário.</td>
+    </tr>
+    <tr>
+      <td>US 4.1.2</td>
+      <td>MUST</td>
+      <td>Como usuário, quero gerenciar minhas notificações para acompanhar e organizar eventos relevantes.</td>
+      <td>- Listar notificações por ordem de data. <br/> - Permitir marcar como lida/não lida. <br/> - Permitir excluir notificações.</td>
+    </tr>
+    <tr>
+      <td>US 4.1.3</td>
+      <td>SHOULD</td>
+      <td>Como usuário, quero gerenciar minhas preferências de notificação para controlar como sou informado.</td>
+      <td>- Permitir ativar/desativar notificações por tipo de evento. <br/> - Preferências persistidas no perfil do usuário. <br/> - Sistema respeita as configurações definidas.</td>
+    </tr>
+  </tbody>
+</table>
