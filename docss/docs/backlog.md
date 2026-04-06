@@ -133,6 +133,19 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
       <td>Como advogado, quero visualizar os detalhes completos de um processo para acompanhar seu andamento sem acessar outros sistemas.</td>
       <td>- Detalhes incluem status, movimentações, tribunal e partes. <br/> - Movimentações ordenadas por data, mais recente primeiro. <br/> - Interface responsiva.</td>
     </tr>
+    <tr>
+    <td>US 2.2.4</td>
+    <td>SHOULD</td>
+    <td>Como advogado, quero exportar um relatório resumido do processo em PDF para enviar atualizações rápidas aos meus clientes.</td>
+    <td>- Gerar PDF com: Número, Status, Últimas 3 movimentações e Tribunal.<br/>- Layout limpo com a logomarca do escritório (se disponível).<br/> - Opção de "Baixar PDF" na tela de detalhes.</td>
+    </tr>
+    <tr>
+      <td>US 2.2.5</td>
+      <td>Could</td>
+      <td>Como advogado, quero registrar formalmente a autorização do cliente para busca por CPF/CNPJ para cumprir normas de compliance.</td>
+      <td>- Campo para upload de termo de autorização ou checkbox de declaração de posse.<br/>- Registro de data/hora em que a autorização foi confirmada.<br/>- Bloquear busca se a autorização não estiver vinculada.</td>
+    </tr>
+    
   </tbody>
 </table>
 
@@ -215,14 +228,8 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
     <tr>
       <td>US 4.1.1</td>
       <td>MUST</td>
-      <td>Como sistema, quero criar notificações a partir de eventos relevantes para que os usuários possam ser informados.</td>
-      <td>- Notificações são geradas a partir de eventos previamente definidos (ex: atualização de processo). <br/> - Nem todo evento do sistema gera notificação. <br/> - Notificação deve ser associada a um usuário.</td>
-    </tr>
-    <tr>
-      <td>US 4.1.2</td>
-      <td>MUST</td>
-      <td>Como usuário, quero gerenciar minhas notificações para acompanhar e organizar eventos relevantes.</td>
-      <td>- Listar notificações por ordem de data. <br/> - Permitir marcar como lida/não lida. <br/> - Permitir excluir notificações.</td>
+      <td>Como advogado, quero que o sistema gere notificações automáticas de eventos e me permita gerenciá-las para que eu acompanhe atualizações importantes e  mantenha meu histórico organizado.</td>
+      <td>- Sistema deve disparar notificações baseadas em gatilhos (ex: nova movimentação na API ou nota interna). <br/>- Notificações devem ser vinculadas ao usuário dono do processo.<br/> - Exibir listagem por ordem cronológica (mais recentes primeiro). <br/>- Permitir que o usuário marque como lida/não lida ou exclua a notificação.</td>
     </tr>
     <tr>
       <td>US 4.1.3</td>
