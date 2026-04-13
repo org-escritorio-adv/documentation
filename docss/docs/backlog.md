@@ -145,7 +145,17 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
       <td>Como advogado, quero registrar formalmente a autorização do cliente para busca por CPF/CNPJ para cumprir normas de compliance.</td>
       <td>- Campo para upload de termo de autorização ou checkbox de declaração de posse.<br/>- Registro de data/hora em que a autorização foi confirmada.<br/>- Bloquear busca se a autorização não estiver vinculada.</td>
     </tr>
-    
+    <tr>
+      <td>US 2.2.6</td>
+      <td>MUST</td>
+      <td>Como advogado, quero calcular prazos processuais em dias úteis com base na movimentação para não perder datas fatais.</td>
+      <td>
+        - Selecionar tipo de prazo (Ex: Contestação - 15 dias).<br/>
+        - Considerar feriados nacionais e suspensões (tabela parametrizável).<br/>
+        - Exibir data final com destaque visual.
+      </td>
+    </tr>
+
   </tbody>
 </table>
 
@@ -181,6 +191,13 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
       <td>Como administrador, quero gerenciar os perfis da equipe de advogados para manter os dados atualizados.</td>
       <td>- Permitir criar, editar e excluir perfis. <br/> - Campos: nome, foto, descrição. <br/> - Exibição automática na página pública.</td>
     </tr>
+    <tr>
+      <td>US 3.1.4</td>
+      <td><strong>MUST</strong></td>
+      <td>Como administrador, quero publicar artigos e notícias jurídicas para demonstrar autoridade técnica aos visitantes.</td>
+      <td>- Editor de texto rico (Markdown/HTML).<br/>- Upload de imagem de capa.<br/>- Botão de "Preview" antes da publicação.</td>
+      </tr>
+      
   </tbody>
 </table>
 
