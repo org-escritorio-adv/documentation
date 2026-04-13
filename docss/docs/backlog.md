@@ -159,6 +159,38 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
   </tbody>
 </table>
 
+## Épico 2.3: Gestão Manual de Processos
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>ID</strong></th>
+      <th><strong>Prioridade</strong></th>
+      <th><strong>User Story</strong></th>
+      <th><strong>Critérios de Aceitação</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US 2.3.1</td>
+      <td><strong>MUST</strong></td>
+      <td>Como advogado, quero cadastrar um processo manualmente informando os dados básicos para gerenciar casos que não constam na busca automática da API.</td>
+      <td>- Campos obrigatórios: Número do Processo, Tribunal, Nome das Partes e Data de Início.<br/>- Validar o formato do Número Único CNPJ (20 dígitos).<br/>- O processo cadastrado manualmente deve aparecer na listagem geral e no Dashboard.</td>
+    </tr>
+    <tr>
+      <td>US 2.3.2</td>
+      <td><strong>MUST</strong></td>
+      <td>Como advogado, quero editar os dados de um processo cadastrado manualmente para corrigir informações ou atualizar o status.</td>
+      <td>- Permitir alteração de todos os campos preenchidos no cadastro manual.<br/>- Registrar no log de auditoria quem realizou a alteração e em qual data/hora.</td>
+    </tr>
+    <tr>
+      <td>US 2.3.3</td>
+      <td>SHOULD</td>
+      <td>Como advogado, quero vincular um processo cadastrado manualmente a uma consulta da API posteriormente para que os dados passem a ser atualizados de forma automática.</td>
+      <td>- Opção de "Sincronizar com API" dentro dos detalhes do processo manual.<br/>- Sistema deve buscar o número no Jusbrasil e, se encontrar, substituir os dados manuais pelos dados oficiais.</td>
+    </tr>
+  </tbody>
+</table>
 ## Tema 3: Sistema Web — Área Institucional
 
 ### Épico 3.1: Gestão de Conteúdo Institucional
