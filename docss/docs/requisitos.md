@@ -67,6 +67,19 @@ Listagem dos nossos requisitos
 - **RF42** — O sistema deve apresentar indicadores básicos de produtividade.
 - **RF43** — O sistema deve possuir uma rotina diária de atualização do dashboard.
 
+### Gestão de Prazos e Exportação 
+- **RF44** — O sistema deve disponibilizar uma calculadora de prazos processuais que considere dias úteis e feriados.
+- **RF45** — O sistema deve permitir salvar datas fatais calculadas nos respectivos processos.
+- **RF46** — O sistema deve permitir a exportação de dados de processos em formatos PDF e CSV.
+
+### Gestão de Demandas Internas 
+- **RF47** — O sistema deve possuir uma visualização em formato Kanban para gestão de casos e demandas extrajudiciais.
+- **RF48** — O sistema deve permitir vincular processos judiciais aos casos geridos no Kanban.
+
+### Atualização em Sistema Web e Autenticação
+- **RF49** — O sistema deve possuir uma caixa de entrada no CMS para gestão (leitura, resposta e arquivamento) das mensagens recebidas pelo formulário.
+- **RF50** — O sistema deve disponibilizar a opção de Autenticação em Dois Fatores (2FA) para os usuários.
+
 ---
 
 ## Requisitos Não-Funcionais
