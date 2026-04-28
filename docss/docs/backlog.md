@@ -230,6 +230,39 @@ Nosso backlog é mantido no *Github Projects*, onde especificamos critérios de 
   </tbody>
 </table>
 
+### Épico 2.5: Gestão de Clientes
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>ID</strong></th>
+      <th><strong>Prioridade</strong></th>
+      <th><strong>User Story</strong></th>
+      <th><strong>Critérios de Aceitação</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US 2.5.1</td>
+      <td>Could</td>
+      <td>Como advogado, quero cadastrar clientes (PF e PJ) com seus dados básicos para centralizar o contato.</td>
+      <td>- Campos: Nome/Razão Social, CPF/CNPJ, E-mail e Telefone.<br/>- Validação de formato de documento (CPF/CNPJ).<br/>- Impedir cadastros duplicados com o mesmo documento.</td>
+    </tr>
+    <tr>
+      <td>US 2.5.2</td>
+      <td>Could</td>
+      <td>Como advogado, quero buscar e filtrar meus clientes para acessar seus dados rapidamente.</td>
+      <td>- Busca por nome ou documento.<br/>- Filtro por tipo de cliente (Pessoa Física ou Jurídica).<br/>- Listagem com paginação.</td>
+    </tr>
+    <tr>
+      <td>US 2.5.3</td>
+      <td>Could</td>
+      <td>Como advogado, quero visualizar o perfil detalhado de um cliente com sua "Visão 360".</td>
+      <td>- Exibir dados de contato do cliente.<br/>- Listar todos os Processos Judiciais vinculados.<br/>- Listar todos os Casos (Kanban) vinculados.<br/>- Área para upload do Termo de Autorização (Compliance).</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Tema 3: Sistema Web — Área Institucional
 
 ### Épico 3.1: Gestão de Conteúdo Institucional
