@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'docss/docs/backlog.md'
+    workflow_dispatch:
 
 jobs:
   sync-issues:
