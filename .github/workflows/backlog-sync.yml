@@ -1,0 +1,28 @@
+name: Sincronizar Backlog com Issues
+
+# A Action é engatilhada sempre que alguém fizer um push alterando o arquivo backlog.md
+on:
+  push:
+    paths:
+      - 'backlog.md'
+
+jobs:
+  sync-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Permissão obrigatória para criar issues no repositório
+      contents: read
+      
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Rodar Script de Parsing e Criação de Issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token injetado automaticamente pelo GitHub
+        run: python .github/scripts/sync_backlog.py
