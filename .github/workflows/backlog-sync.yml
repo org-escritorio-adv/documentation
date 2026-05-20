@@ -4,7 +4,7 @@ name: Sincronizar Backlog com Issues
 on:
   push:
     paths:
-      - 'backlog.md'
+      - 'docss/docs/backlog.md'
 
 jobs:
   sync-issues:
