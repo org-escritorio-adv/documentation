@@ -2,7 +2,7 @@ import os
 import re
 import subprocess
 
-BACKLOG_FILE = 'backlog.md'
+BACKLOG_FILE = 'docss/docs/backlog.md'
 
 def get_existing_issues():
     """Busca as issues já existentes para evitar duplicação."""
